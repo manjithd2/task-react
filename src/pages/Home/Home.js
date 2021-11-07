@@ -7,6 +7,7 @@ function Home() {
             <h4>Zolve task</h4>
             <ul>
                 <li>I have Implemented the given 2 tasks and partially implemented the 3rd optional task.</li>
+                <li>Run the dev server in HTTPS mode while viewing the Webcam task</li>
                 <li>I have used material UI for styling some components, the API tasks mostly</li>
                 <li>I have used react-redux for the state management in the API task, to get the graph data</li>
                 <li>I used charts.js for the graph rendering bit</li>
