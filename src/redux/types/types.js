@@ -1,0 +1,1 @@
+export const GRAPH_DATA = 'graph_data'

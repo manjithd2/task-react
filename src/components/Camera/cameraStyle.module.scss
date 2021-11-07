@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+
+
+.camera {
+    &__area {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        video {
+            @include breakpoint(mobile){
+                width: 100%;
+            }
+        }
+        img{
+            @include breakpoint(mobile){
+                width: 100%;
+            }
+        }
+        &__info{
+            text-align: center;
+        /* display: flex; */
+            height: 150px;
+        }
+    }
+    &__buttons {
+        justify-content: center;
+        display: flex;
+        button{
+            font-family: $mainFont;
+            border: none;
+            padding: 1rem;
+            margin-right: 10px;
+            background-color: $blue;
+            color: white;
+            cursor: pointer;
+        }
+        
+    }
+}

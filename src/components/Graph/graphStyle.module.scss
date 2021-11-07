@@ -1,0 +1,9 @@
+@import "../../styles/variables";
+
+.graphBody {
+    width: 80%;
+    margin: 0 auto;
+    @include breakpoint(mobile){
+        width: 100%;
+    }
+}

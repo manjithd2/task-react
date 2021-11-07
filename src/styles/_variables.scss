@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+//Responsive Breakpoints 
+
+@mixin breakpoint($point) {
+    @if $point == mobile {
+        @media screen and (max-width: 400px) {
+            @content;
+        }
+    }
+    @else if $point == laptop {
+        @media screen and (min-width: 760px) {
+            @content;
+        }
+    }
+    @else if $point == desktop {
+        @media screen and (min-width: 1224px) {
+            @content;
+        }
+    }
+    @else if $point == largescreens {
+        @media screen and (min-width: 1824px) {
+            @content;
+        }
+    }
+}
+
+
+$mainFont : 'Poppins', sans-serif;
+
+$dark: rgba(42,42,42,1);
+$white: rgba(255,255,255,1);
+$blue: rgba(79,166,255,1);

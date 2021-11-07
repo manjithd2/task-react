@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+
+.clipboard{
+    display: flex;
+    justify-content: center;
+    @include breakpoint(mobile){
+        flex-direction: column;
+    }
+
+    input {
+        padding: 1rem;
+        font-family: $mainFont;
+        @include breakpoint(mobile){
+            margin: 10px auto;
+            width: 80%;
+        }
+
+    }
+
+    button {
+        margin-left: 10px;
+        width: 5rem;
+        border: none;
+        background-color: $blue;
+        color: white;
+        font-family: $mainFont;
+        cursor: pointer;
+        @include breakpoint(mobile){
+            margin: 10px auto;
+            width: 80%;
+            padding: 1rem;
+        }
+
+
+    }
+
+}
+
+.notification {
+    text-align: center;
+    margin-top: 20px;
+
+    b {
+        color: $blue;
+    }
+}
